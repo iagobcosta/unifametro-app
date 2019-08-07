@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 10,
         color: '#000',
         fontFamily: 'shelter',
-        height: 30,
+        height: 36,
         fontSize: 28
     },
     avatar:{
