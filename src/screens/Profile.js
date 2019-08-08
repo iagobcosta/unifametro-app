@@ -5,6 +5,7 @@ import {
     Text,
     TouchableOpacity         
 } from 'react-native'
+import Styles from '../css/Styles'
 import { connect } from 'react-redux'
 import { logout } from '../store/actions/user'
 
@@ -24,8 +25,8 @@ class Profile extends Component {
                 <Gravatar options={options} style={styles.avatar} />
                 <Text style={styles.nickname}>{this.props.name}</Text>
                 <Text style={styles.emial}>{this.props.email}</Text>
-                <TouchableOpacity onPress={this.logout} style={styles.buttom}>
-                    <Text style={styles.buttomText}>Sair</Text>
+                <TouchableOpacity onPress={this.logout} style={Styles.button}>
+                    <Text style={Styles.buttomText}>Sair</Text>
                 </TouchableOpacity>
             </View>
         )
@@ -41,7 +42,8 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 50,
-        marginTop: 100
+        marginTop: 100,
+        backgroundColor: '#3D3D3D'
     },
     nickname:{
         marginTop: 30,
@@ -51,11 +53,8 @@ const styles = StyleSheet.create({
     email:{
         marginTop: 20,
         fontSize: 25
-    },
-    buttom:{
-        marginTop: 30,
-        padding: 10,
-        backgroundColor: '#4286f4'
+    
+    
     },
     buttomText:{
         fontSize: 20,
