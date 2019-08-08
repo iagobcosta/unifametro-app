@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         height: 100,
         borderRadius: 50,
         marginTop: 100,
-        backgroundColor: 'red'
+        backgroundColor: '#3D3D3D'
     },
     nickname:{
         marginTop: 30,
