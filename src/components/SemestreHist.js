@@ -1,9 +1,9 @@
 import React from 'react';
 import DropDownItem from 'react-native-drop-down-item';
 import { View, Text, StyleSheet } from 'react-native';
-import Disciplina from './Disciplina'
+import DisciplinaHist from './DisciplinaHist'
 
-class Semestre extends React.Component {
+class SemestreHist extends React.Component {
     render(){
         view = null
         if(this.props.semestre){
@@ -12,20 +12,22 @@ class Semestre extends React.Component {
                     <DropDownItem
                             key={index}
                             style={styles.dropDownItem}
-                            contentVisible={false}              
+                            contentVisible={false}
+                            visibleImage={<View></View>}
+                            invisibleImage={<View></View>}                
                             header={
                             <View style={styles.titleSemestre}>
                                 <Text style={styles.title}>Período: {item.periodo}</Text>
                                 <Text style={styles.title}>CR: {item.cr}</Text>
                             </View>}>
                             <View style={styles.cadeiras}>   
-                                <Disciplina cadeira={item.cadeira1} />
-                                <Disciplina cadeira={item.cadeira2} /> 
-                                <Disciplina cadeira={item.cadeira3} />
-                                <Disciplina cadeira={item.cadeira4} />
-                                <Disciplina cadeira={item.cadeira5} />
+                                <DisciplinaHist disciplina={item.disciplina1} />
+                                <DisciplinaHist disciplina={item.disciplina2} /> 
+                                <DisciplinaHist disciplina={item.disciplina3} />
+                                <DisciplinaHist disciplina={item.disciplina4} />
+                                <DisciplinaHist disciplina={item.disciplina5} />
                             </View>
-                        </DropDownItem>
+                    </DropDownItem>
                 )
             })
         }
@@ -62,4 +64,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Semestre
+export default SemestreHist

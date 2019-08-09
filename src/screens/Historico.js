@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements'
 import ProgressCircle from 'react-native-progress-circle'
 
-import Semestre from '../components/Semestre'
+import SemestreHist from '../components/SemestreHist'
 
 
 
@@ -18,20 +18,20 @@ class Historico extends React.Component {
                     id: Math.random(),
                     periodo: '2016.1',
                     cr: '7.65',
-                    cadeira1: [{
-                        disciplina: 'GESTÃO EMPREENDEDORA',
+                    disciplina1: [{
+                        nome: 'GESTÃO EMPREENDEDORA',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
                     }],
-                    cadeira2: [{
-                        disciplina: 'LÓGICA DA MATEMÁTICA',
+                    disciplina2: [{
+                        nome: 'LÓGICA DA MATEMÁTICA',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
                     }],
-                    cadeira3: [{
-                        disciplina: 'LÓGICA DE PROGRAMAÇÃO',
+                    disciplina3: [{
+                        nome: 'LÓGICA DE PROGRAMAÇÃO',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
@@ -44,20 +44,20 @@ class Historico extends React.Component {
                     id: Math.random(),
                     periodo: '2016.2',
                     cr: '7.85',
-                    cadeira1: [{
-                        disciplina: 'METODOLOGIA DO TRABALHO CIENTÍFICO',
+                    disciplina1: [{
+                        nome: 'METODOLOGIA DO TRABALHO CIENTÍFICO',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
                     }],
-                    cadeira2: [{
-                        disciplina: 'ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES',
+                    disciplina2: [{
+                        nome: 'ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
                     }],
-                    cadeira3: [{
-                        disciplina: 'ESTRUTURAS DE DADOS',
+                    disciplina3: [{
+                        nome: 'ESTRUTURAS DE DADOS',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
@@ -70,20 +70,20 @@ class Historico extends React.Component {
                     id: Math.random(),
                     periodo: '2017.1',
                     cr: '6.75',
-                    cadeira1: [{
-                        disciplina: 'ÉTICA, COMPUTADOR E SOCIEDADE',
+                    disciplina1: [{
+                        nome: 'ÉTICA, COMPUTADOR E SOCIEDADE',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '5%'
                     }],
-                    cadeira2: [{
-                        disciplina: 'MATEMÁTICA DISCRETA',
+                    disciplina2: [{
+                        nome: 'MATEMÁTICA DISCRETA',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '0'
                     }],
-                    cadeira3: [{
-                        disciplina: 'PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO',
+                    disciplina3: [{
+                        nome: 'PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO',
                         situacao: 'AP',
                         nota: '8,0',
                         faltas: '15%'
@@ -96,20 +96,20 @@ class Historico extends React.Component {
                     id: Math.random(),
                     periodo: '2017.2',
                     cr: '7.41',
-                    cadeira1: [{
-                        disciplina: 'DIREITO EMPRESARIAL',
+                    disciplina1: [{
+                        nome: 'DIREITO EMPRESARIAL',
                         situacao: 'AP',
                         nota: '10,0',
                         faltas: '0%'
                     }],
-                    cadeira2: [{
-                        disciplina: 'FUNDAMENTOS DE BANCO DE DADOS',
+                    disciplina2: [{
+                        nome: 'FUNDAMENTOS DE BANCO DE DADOS',
                         situacao: 'AP',
                         nota: '5,3',
                         faltas: '5%'
                     }],
-                    cadeira3: [{
-                        disciplina: 'LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS',
+                    disciplina3: [{
+                        nome: 'LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS',
                         situacao: 'AP',
                         nota: '7,5',
                         faltas: '10%'
@@ -117,112 +117,7 @@ class Historico extends React.Component {
                   
                 }
             ],
-            semestre5: [
-                {
-                    id: Math.random(),
-                    periodo: '2017.2',
-                    cr: '7.41',
-                    cadeira1: [{
-                        disciplina: 'DIREITO EMPRESARIAL',
-                        situacao: 'AP',
-                        nota: '10,0',
-                        faltas: '0%'
-                    }],
-                    cadeira2: [{
-                        disciplina: 'FUNDAMENTOS DE BANCO DE DADOS',
-                        situacao: 'AP',
-                        nota: '5,3',
-                        faltas: '5%'
-                    }],
-                    cadeira3: [{
-                        disciplina: 'LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS',
-                        situacao: 'AP',
-                        nota: '7,5',
-                        faltas: '10%'
-                    }]
-                  
-                }
-            ],
-            semestre6: [
-                {
-                    id: Math.random(),
-                    periodo: '2017.2',
-                    cr: '7.41',
-                    cadeira1: [{
-                        disciplina: 'DIREITO EMPRESARIAL',
-                        situacao: 'AP',
-                        nota: '10,0',
-                        faltas: '0%'
-                    }],
-                    cadeira2: [{
-                        disciplina: 'FUNDAMENTOS DE BANCO DE DADOS',
-                        situacao: 'AP',
-                        nota: '5,3',
-                        faltas: '5%'
-                    }],
-                    cadeira3: [{
-                        disciplina: 'LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS',
-                        situacao: 'AP',
-                        nota: '7,5',
-                        faltas: '10%'
-                    }]
-                  
-                }
-            ],
-            semestre7: [
-                {
-                    id: Math.random(),
-                    periodo: '2017.2',
-                    cr: '7.41',
-                    cadeira1: [{
-                        disciplina: 'DIREITO EMPRESARIAL',
-                        situacao: 'AP',
-                        nota: '10,0',
-                        faltas: '0%'
-                    }],
-                    cadeira2: [{
-                        disciplina: 'FUNDAMENTOS DE BANCO DE DADOS',
-                        situacao: 'AP',
-                        nota: '5,3',
-                        faltas: '5%'
-                    }],
-                    cadeira3: [{
-                        disciplina: 'LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS',
-                        situacao: 'AP',
-                        nota: '7,5',
-                        faltas: '10%'
-                    }]
-                  
-                }
-            ],
-            semestre8: [
-                {
-                    id: Math.random(),
-                    periodo: '2017.2',
-                    cr: '7.41',
-                    cadeira1: [{
-                        disciplina: 'DIREITO EMPRESARIAL',
-                        situacao: 'AP',
-                        nota: '10,0',
-                        faltas: '0%'
-                    }],
-                    cadeira2: [{
-                        disciplina: 'FUNDAMENTOS DE BANCO DE DADOS',
-                        situacao: 'AP',
-                        nota: '5,3',
-                        faltas: '5%'
-                    }],
-                    cadeira3: [{
-                        disciplina: 'LINGUAGEM DE PROGRAMAÇÃO ORIENTADA A OBJETOS',
-                        situacao: 'AP',
-                        nota: '7,5',
-                        faltas: '10%'
-                    }]
-                  
-                }
-            ],     
-        
-        
+          
     }
     
   render() {
@@ -241,16 +136,16 @@ class Historico extends React.Component {
                 </ProgressCircle>
             </Card>
             
-                <ScrollView style={{ }}>
+                <ScrollView >
 
-                    <Semestre semestre={this.state.semestre1} />
-                    <Semestre semestre={this.state.semestre2} />
-                    <Semestre semestre={this.state.semestre3} />
-                    <Semestre semestre={this.state.semestre4} />
-                    <Semestre semestre={this.state.semestre5} />
-                    <Semestre semestre={this.state.semestre6} />
-                    <Semestre semestre={this.state.semestre7} />
-                    <Semestre semestre={this.state.semestre8} />
+                    <SemestreHist semestre={this.state.semestre1} />
+                    <SemestreHist semestre={this.state.semestre2} />
+                    <SemestreHist semestre={this.state.semestre3} />
+                    <SemestreHist semestre={this.state.semestre4} />
+                    <SemestreHist semestre={this.state.semestre5} />
+                    <SemestreHist semestre={this.state.semestre6} />
+                    <SemestreHist semestre={this.state.semestre7} />
+                    <SemestreHist semestre={this.state.semestre8} />
                         
                     
                 </ScrollView>
