@@ -12,7 +12,7 @@ class NotasEFaltas extends Component {
             valores1:[{
                 nota1: '5.3',
                 nota2: '8.5',
-                nota3: '9.6',
+                nota3: '0',
                 faltas: '5%'
             }]
         }],
@@ -21,7 +21,7 @@ class NotasEFaltas extends Component {
             valores2:[{
                 nota1: '5.3',
                 nota2: '8.5',
-                nota3: '9.6',
+                nota3: '0',
                 faltas: '5%'
             }]
         }],
@@ -30,7 +30,7 @@ class NotasEFaltas extends Component {
             valores3:[{
                 nota1: '5.3',
                 nota2: '8.5',
-                nota3: '9.6',
+                nota3: '0',
                 faltas: '5%'
             }]
         }],
@@ -39,7 +39,7 @@ class NotasEFaltas extends Component {
             valores4:[{
                 nota1: '5.3',
                 nota2: '8.5',
-                nota3: '9.6',
+                nota3: '0',
                 faltas: '5%'
             }]
         }],
@@ -48,7 +48,7 @@ class NotasEFaltas extends Component {
             valores5:[{
                 nota1: '5.3',
                 nota2: '8.5',
-                nota3: '9.6',
+                nota3: '0',
                 faltas: '5%'
             }]
         }],

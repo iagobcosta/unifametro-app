@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
 import { View, StyleSheet, ScrollView } from 'react-native';
-import QuadroDHorariosCompo from '../components/QuadroDHorariosCompo'
+import QuadroHorarios from '../components/QuadroHorarios'
+import { FlatList } from 'react-native-gesture-handler';
 
 
 
 
 class QuadroDHorarios extends Component {
 
-    state = {
+    state = {       
         disciplina1:[{
+            id: Math.random(),
             nome: 'SEGURANÇA DA INFORMAÇÃO',
             turma: 'SINF8N',
             unidade: 'Guilherme Rocha',
@@ -19,6 +21,7 @@ class QuadroDHorarios extends Component {
             fim: '21:45'
         }],
         disciplina2:[{
+            id: Math.random(),
             nome: 'SEGURANÇA DA INFORMAÇÃO',
             turma: 'SINF8N',
             unidade: 'Guilherme Rocha',
@@ -26,14 +29,49 @@ class QuadroDHorarios extends Component {
             dia: 'seg',
             inicio: '19:00',
             fim: '21:45'
-        }]
+        }],
+        disciplina3:[{
+            id: Math.random(),
+            nome: 'SEGURANÇA DA INFORMAÇÃO',
+            turma: 'SINF8N',
+            unidade: 'Guilherme Rocha',
+            sala: '126',
+            dia: 'seg',
+            inicio: '19:00',
+            fim: '21:45'
+        }],
+        disciplina4:[{
+            id: Math.random(),
+            nome: 'SEGURANÇA DA INFORMAÇÃO',
+            turma: 'SINF8N',
+            unidade: 'Guilherme Rocha',
+            sala: '126',
+            dia: 'seg',
+            inicio: '19:00',
+            fim: '21:45'
+        }],
+        disciplina5:[{
+            id: Math.random(),
+            nome: 'SEGURANÇA DA INFORMAÇÃO',
+            turma: 'SINF8N',
+            unidade: 'Guilherme Rocha',
+            sala: '126',
+            dia: 'seg',
+            inicio: '19:00',
+            fim: '21:45'
+        }],
+        
+        
     }
   render() {
     return (
         <View style={styles.container}>
             <ScrollView>
-            <QuadroDHorariosCompo disciplina={this.state.disciplina1} />
-            <QuadroDHorariosCompo disciplina={this.state.disciplina2} />
+            <QuadroHorarios  disciplina={this.state.disciplina1} />
+            <QuadroHorarios  disciplina={this.state.disciplina2} />
+            <QuadroHorarios  disciplina={this.state.disciplina3} />
+            <QuadroHorarios  disciplina={this.state.disciplina4} />
+            <QuadroHorarios  disciplina={this.state.disciplina5} />
             </ScrollView>
         </View>
     )

@@ -18,7 +18,7 @@ class DisciplinaAtual extends React.Component{
                                 <Text style={{fontWeight:'bold', fontSize: 30}}>{item.nota2} </Text>
                             </Card >
 
-                            <Card title = 'AV3' style={styles.nota3}>
+                            <Card title = 'AF' style={styles.nota3}>
                                 <Text style={{fontWeight:'bold', fontSize: 30}}>{item.nota3} </Text>
                             </Card >
 
