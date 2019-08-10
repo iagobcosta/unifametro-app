@@ -13,14 +13,27 @@ import Profile from './screens/Profile'
 import Login from './screens/Login'
 import Menu from './screens/Menu'
 import Historico from './screens/Historico'
+import NotasEFaltas from './screens/NotasEFaltas'
+import QuadroDHorarios from './screens/QuadroDHorarios'
 
 const MenuStackRoutes = createStackNavigator({
-    Menu: Menu,       
-    
+    Menu: Menu,    
     Historico:{
         screen: Historico,
         navigationOptions:{
             title: 'Histórico Acadêmico'
+        }
+    },
+    NotasEFaltas:{
+        screen: NotasEFaltas,
+        navigationOptions:{
+            title: 'Notas e Faltas'
+        }
+    },
+    QuadroDHorarios:{
+        screen: QuadroDHorarios,
+        navigationOptions:{
+            title: 'Quadro de Horários'
         }
     }
 },{

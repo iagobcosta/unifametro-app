@@ -4,15 +4,15 @@ import {  Divider } from 'react-native-elements'
 
 
 
-class Disciplina extends React.Component {
+class DisciplinaHist extends React.Component {
     render(){
         view = null
-        if(this.props.cadeira){
-            view = this.props.cadeira.map((item, index) => {
+        if(this.props.disciplina){
+            view = this.props.disciplina.map((item, index) => {
                 return (
                     <View key={index} style={styles.body}>
                         <Text style={styles.disciplina}>
-                            Disciplina: { item.disciplina} 
+                            Disciplina: { item.nome} 
                         </Text>
                         <View style={styles.valores}>                       
                             <Text >
@@ -46,15 +46,16 @@ const styles = StyleSheet.create({
     },
     disciplina:{
         marginVertical: 15,
-        fontSize: 15
+        fontSize: 20,
+        fontWeight: 'bold'
     },
     valores:{
         
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-evenly',
-        fontSize: 12
+        justifyContent: 'space-between',
+        fontSize: 17
     }
 })
 
-export default Disciplina
+export default DisciplinaHist
