@@ -22,13 +22,16 @@ class Menu extends Component{
     onQuadroDHorarios = () => {
         this.props.navigation.navigate('QuadroDHorarios')
     }
+    onBoletos = () => {
+        this.props.navigation.navigate('Boleto')
+    }
     render(){
         return (
             <View style={styles.container}>               
                 <Text style={styles.title}>MENU</Text>
                 <TouchableOpacity style={styles.card}
                     onPress={this.onHistorico}>
-                        <Icon name='file-o' size={25} color={'green'} style={styles.icon} />
+                        <Icon name='book' size={25} color={'green'} style={styles.icon} />
                         <Text style={styles.texto}>Histórico acadêmico</Text>
                 </TouchableOpacity>
 
@@ -42,6 +45,12 @@ class Menu extends Component{
                     onPress={this.onQuadroDHorarios}>
                         <Icon name='history' size={25} color={'green'} style={styles.icon} />
                         <Text style={styles.texto}>Quadro de horas</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.card}
+                    onPress={this.onBoletos}>
+                        <Icon name='barcode' size={25} color={'green'} style={styles.icon} />
+                        <Text style={styles.texto}>Botelos</Text>
                 </TouchableOpacity>
             </View>
         )

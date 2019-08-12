@@ -11,13 +11,15 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 name: action.payload.name,
-                email: action.payload.email
+                email: action.payload.email,
+                curso: action.payload.curso
             }
         case USER_LOGGED_OUT:
             return {
                 ...state,
                 name: null,
-                email: null
+                email: null,
+                curso: null
             }
         default:
             return state    

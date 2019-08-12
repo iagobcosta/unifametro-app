@@ -15,6 +15,7 @@ import Menu from './screens/Menu'
 import Historico from './screens/Historico'
 import NotasEFaltas from './screens/NotasEFaltas'
 import QuadroDHorarios from './screens/QuadroDHorarios'
+import Boleto from './screens/Boleto'
 
 const MenuStackRoutes = createStackNavigator({
     Menu: Menu,    
@@ -34,6 +35,12 @@ const MenuStackRoutes = createStackNavigator({
         screen: QuadroDHorarios,
         navigationOptions:{
             title: 'Quadro de Horários'
+        }
+    },
+    Boleto:{
+        screen: Boleto,
+        navigationOptions:{
+            title: 'Boletos'
         }
     }
 },{
