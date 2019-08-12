@@ -14,7 +14,7 @@ class Header extends Component {
     render(){
         const name = this.props.name || 'Anonymous'
         const gravatar = this.props.email ?
-            <Gravatar options={{email: this.props.email, secure: true}}
+            <Gravatar options={{email: this.props.email, secure: false}}
                 style={styles.avatar} />
                 : null
         return(

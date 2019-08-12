@@ -22,7 +22,8 @@ class Login extends React.Component{
   
     state = { 
       name: 'Iago Barbosa', 
-      email:'', 
+      email:'iagobarbosacosta@gmail.com',
+      curso: 'Sistema de Informação',     
       senha:'',
     }
   

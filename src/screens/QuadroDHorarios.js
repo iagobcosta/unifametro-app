@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import { View, StyleSheet, ScrollView } from 'react-native';
-import QuadroHorarios from '../components/QuadroHorarios'
-import { FlatList } from 'react-native-gesture-handler';
+import QuadroHorarios from '../components/quadroHorarios/QuadroHorarios'
+
 
 
 

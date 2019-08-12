@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card } from 'react-native-elements'
 import { View, Text,ScrollView, StyleSheet } from 'react-native';
-import SemestreAtual from '../components/SemestreAtual'
+import SemestreAtual from '../components/notasFaltas/SemestreAtual'
 
 
 

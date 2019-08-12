@@ -10,11 +10,11 @@ class DisciplinaAtual extends React.Component{
                 return (
                     <View key={index} style={styles.body}>                        
                         <View style={styles.valores}>                       
-                            <Card title = 'AV1' style={styles.nota1}>
+                            <Card title = 'AP1' style={styles.nota1}>
                                <Text style={{fontWeight:'bold', fontSize: 30}}>{item.nota1} </Text>
                             </Card >
 
-                            <Card title = 'AV2' style={styles.nota2}>
+                            <Card title = 'AP2' style={styles.nota2}>
                                 <Text style={{fontWeight:'bold', fontSize: 30}}>{item.nota2} </Text>
                             </Card >
 

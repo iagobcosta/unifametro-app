@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements'
 import ProgressCircle from 'react-native-progress-circle'
 
-import SemestreHist from '../components/SemestreHist'
+import SemestreHist from '../components/historioAcademnico/SemestreHist'
 
 
 

@@ -5,11 +5,14 @@ import {
     Text,
     TouchableOpacity         
 } from 'react-native'
-import Styles from '../css/Styles'
+
 import { connect } from 'react-redux'
 import { logout } from '../store/actions/user'
+import HeaderPerfil from '../components/HeaderPerfil'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
-import {Gravatar} from 'react-native-gravatar'
+
+
 
 class Profile extends Component {
 
@@ -19,15 +22,32 @@ class Profile extends Component {
     }
 
     render(){
-        const options = { email: this.props.email, secure: true}
-        return(
+        
+        return(            
             <View style={styles.container}>
-                <Gravatar options={options} style={styles.avatar} />
-                <Text style={styles.nickname}>{this.props.name}</Text>
-                <Text style={styles.emial}>{this.props.email}</Text>
-                <TouchableOpacity onPress={this.logout} style={Styles.button}>
-                    <Text style={Styles.buttomText}>Sair</Text>
+               
+                <HeaderPerfil email={this.props.email} name={this.props.name}/>
+            
+                <View style={styles.containerEmail}>
+                    <Icon name="envelope" size={20} color={'green'}  />
+                    <Text style={styles.email}>
+                    
+                        {this.props.email}                    
+                    </Text> 
+                </View>
+
+                <View style={styles.containerCurso}>  
+                <Icon name="graduation-cap" size={20} color={'green'}  />                 
+                    <Text style={styles.email}>                    
+                        {this.props.curso}                    
+                    </Text> 
+                </View>
+
+                <TouchableOpacity onPress={this.logout} style={styles.button}>
+                    <Text style={styles.buttomText}>Sair</Text>
+                    <Icon name="sign-out" size={20} color={'green'}  /> 
                 </TouchableOpacity>
+               
             </View>
         )
     }
@@ -36,29 +56,46 @@ class Profile extends Component {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        alignItems: 'center'
     },
-    avatar:{
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        marginTop: 100,
-        backgroundColor: '#3D3D3D'
-    },
-    nickname:{
-        marginTop: 30,
-        fontSize: 30,
-        fontWeight: 'bold'
-    },
+    
+    
     email:{
-        marginTop: 20,
-        fontSize: 25
-    
-    
+        margin: 15,
+        fontSize: 13,
+    },
+    containerEmail:{
+        marginHorizontal: 15,
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderBottomWidth: 1,
+        borderColor: '#BBB',
+       
+    },
+    containerCurso:{
+        marginHorizontal: 15,
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderBottomWidth: 1,
+        borderColor: '#BBB',
     },
     buttomText:{
-        fontSize: 20,
-        color: '#FFF'
+        fontSize: 15,
+        color: 'black'
+    },
+    button:{
+        alignItems: 'center',
+        width: '50%',
+        margin: 50,      
+        paddingHorizontal: 5,       
+        marginHorizontal: 100,
+        borderBottomWidth: 3,
+        borderRightWidth: 3,
+        borderLeftWidth: 3,
+        borderTopWidth: 3,
+        borderRadius:10,             
+        borderColor: 'green'
+        
+       
     }
 
 })
@@ -67,6 +104,8 @@ const mapStateToProps = ({ user }) => {
     return {
         email: user.email,
         name: user.name,
+        curso: user.curso,
+
     }
 }
 
